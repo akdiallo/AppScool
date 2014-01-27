@@ -25,7 +25,7 @@ public class AppScool extends Application {
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                System.out.println("Administrateur");
             }
         });
 
@@ -34,7 +34,7 @@ public class AppScool extends Application {
 
         Scene scene = new Scene(root, 300, 250);
 
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("AppScool ");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
