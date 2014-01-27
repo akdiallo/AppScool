@@ -61,8 +61,10 @@ public class AppScool extends Application{
         
         
         primaryStage.setScene(scene);
-        primaryStage.show();
-        
+        primaryStage.show();        
+
+        //test
+
     }
     public static void main(String[] args) {
         launch(args);
