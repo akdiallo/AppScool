@@ -37,6 +37,7 @@ public class AppScool extends Application {
         primaryStage.setTitle("AppScool ");
         primaryStage.setScene(scene);
         primaryStage.show();
+        //test
     }
 
     /**
