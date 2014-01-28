@@ -58,7 +58,7 @@ public class AppScool extends Application{
         Text authen=new Text("Authentification - Administrateur");
         hb.getChildren().add(authen);
         box.getChildren().add(hb);
-        
+        //test Abi 2
         
         primaryStage.setScene(scene);
         primaryStage.show();        
@@ -69,4 +69,5 @@ public class AppScool extends Application{
     public static void main(String[] args) {
         launch(args);
     }
+    //Test Abibatou
 }
