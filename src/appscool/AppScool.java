@@ -5,16 +5,12 @@
 package appscool;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -24,46 +20,55 @@ import javafx.stage.Stage;
  */
 public class AppScool extends Application{
 
+    private double width=500;
+    private double height=450;
     @Override
     public void start(Stage primaryStage){
         
+        GridPane root=new GridPane();
+        root.setVgap(30);
+        root.setPadding(new Insets(10,5,10,5));
+        Scene scene=new Scene(root,width,height);
+       
+        HBox hbox1=new HBox(200);
+        hbox1.setPrefWidth(width-10);
+        hbox1.getChildren().addAll(new Text("Bienvenue sur votre espace M.XY"),
+                new Button("Déconnection")
+        ); 
+        root.addRow(0,hbox1);
         
-        VBox box=new VBox(10);
-        box.setAlignment(Pos.CENTER);
-        Scene scene=new Scene(box,500,500,Color.LIGHTBLUE);
+        HBox hbox2=new HBox(20);
+        hbox2.setPrefWidth(width-10); 
+        hbox2.getChildren().addAll(
+                new Button("Incrémenter l'année"),
+                new Button("Base Vierge"),
+                new Button("Mise à jour des infos de l'établissement")
+        );
+        root.addRow(1,hbox2);
         
-        TextField login=new TextField("Login");
-        login.setMaxWidth(150);
-        box.getChildren().add(login);
+        HBox hbox3=new HBox(20);
+        hbox3.setPrefWidth(width-10);
+        hbox3.getChildren().addAll(
+                new Button("Copier les personnes de l'année précédente"),
+                new Button("Copier les classes de l'année précédente"),
+                new Button("Copier les matières de l'année précédente")
+        );
+        root.addRow(2,hbox3);
         
-        PasswordField password=new PasswordField();
-        password.setMaxWidth(150);
-        box.getChildren().add(password);
+        HBox hbox4=new HBox(100);
+        hbox4.setPrefWidth(width-10);
+        hbox4.setTranslateX(100);
+        hbox4.getChildren().addAll(new Button("Valider"),new Button("Annuler"));
+        root.addRow(4,hbox4);
         
-        final Button bCon=new Button("Se connecter");
-        bCon.setOnAction(new EventHandler<ActionEvent>(){
-            @Override
-            public void handle(ActionEvent e){
-                bCon.setText("Se connecter cliqué");
-            }
-        });
-        box.getChildren().add(bCon);
-        
-        Button bReturn=new Button("Retour");
-        
-        box.getChildren().add(bReturn);
-        
-        HBox hb=new HBox();
-        hb.setAlignment(Pos.BOTTOM_CENTER);
-        Text authen=new Text("Authentification - Administrateur");
-        hb.getChildren().add(authen);
-        box.getChildren().add(hb);
-        
+        HBox hbox5=new HBox();
+        hbox5.getChildren().add(new Text("Espace - Administrateur - Année 20XX-20YY"));
+        hbox5.setAlignment(Pos.BOTTOM_CENTER);
+        root.addRow(6,hbox5);
         
         primaryStage.setScene(scene);
         primaryStage.show();        
 
-        //test
 
     }
     public static void main(String[] args) {

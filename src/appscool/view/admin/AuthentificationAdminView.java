@@ -6,47 +6,71 @@
 
 package appscool.view.admin;
 
-import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
 public class AuthentificationAdminView{
-    /*@Override
-    public void start(Stage primaryStage){
+   /*
+    GridPane grid;
+    public AuthentificationAdminView(){
         
+        this=new super(grid,500,500,Color.LIGHTBLUE);
+        grid=new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        grid.setVgap(20);
+        grid.setPadding(new Insets(25,25,25,10));
         
-        VBox box=new VBox(10);
-        Scene scene=new Scene(box,500,500,Color.BLUE);
+        Scene scene=new Scene(grid,500,500,Color.STEELBLUE);
+        scene.getStylesheets().add(AuthentificationAdminView.class.getResource("AuthentificationAdminView.css").toExternalForm());
         
-        TextField login=new TextField("Login");
-        box.getChildren().add(login);
+        VBox vbox1=new VBox(15);
+        grid.add(vbox1,1,0,1,2);
+        
+        TextField login=new TextField();
+        login.setPromptText("Login");
+        login.setMaxWidth(150);
+        vbox1.getChildren().add(login);
         
         PasswordField password=new PasswordField();
-        box.getChildren().add(password);
+        password.setPromptText("Mot De Passe");
+        password.setMaxWidth(150);
+        vbox1.getChildren().add(password);
         
-        Button bCon=new Button("Se connecter");
-        box.getChildren().add(bCon);
+        VBox vbox2=new VBox(15);
+        vbox2.setTranslateX(25);
+        grid.add(vbox2,1,3,1,2);
         
-        Button bReturn=new Button("Retour");
-        box.getChildren().add(bReturn);
+        final Button btnConnection=new Button("Se connecter");
+        btnConnection.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent e){
+                btnConnection.setText("Se connecter cliqué");
+            }
+        });
+        btnConnection.setMaxWidth(100);
+        vbox2.getChildren().add(btnConnection);
+        
+        Button btnReturn=new Button("Retour");
+        btnReturn.setMaxWidth(100);
+        vbox2.getChildren().add(btnReturn);
+        
         
         Text authen=new Text("Authentification - Administrateur");
-        box.getChildren().add(authen);
-        
-        primaryStage.setScene(scene);
-        
-    }
-    public static void main(String[] args) {
-        launch(args);
+        authen.setTranslateY(50);
+        grid.add(authen,1,9);
     }*/
 }
