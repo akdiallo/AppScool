@@ -11,11 +11,15 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="AppScool.jar" size="22157" download="eager" />
     <jar href="lib/deploy.jar" size="4064329" download="eager" />
     <jar href="lib/javaws.jar" size="897652" download="eager" />
     <jar href="lib/jfxrt.jar" size="15085395" download="eager" />
     <jar href="lib/plugin.jar" size="1877279" download="eager" />
+=======
+    <jar href="AppScool.jar" size="25686" download="eager" />
+>>>>>>> 6da95fc1c3ee78dd7615132edd0d963e305b6b0f
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AppScool" >
     <param name="requiredFXVersion" value="2.2+"/>
