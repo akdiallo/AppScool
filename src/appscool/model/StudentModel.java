@@ -6,7 +6,7 @@ package appscool.model;
 
 /**
  *
- * @author khadre
+ * @author minalouta
  */
 public class StudentModel {
     private int numEleve;
@@ -27,6 +27,14 @@ public class StudentModel {
     //setter
     public void setAdresseParents(String  adr){
         this.adresseParents = adr;
+    }
+
+    public void setNumEleve(int numEleve) {
+        this.numEleve = numEleve;
+    }
+
+    public void setNumAssurance(int numAssurance) {
+        this.numAssurance = numAssurance;
     }
 
 }

@@ -22,9 +22,12 @@ public class AppScool extends Application{
 
     @Override
     public void start(Stage primaryStage){
+
         AdministratorModel adminModel = new AdministratorModel();
         AuthentificationAdminPresenter adminPresenter = new AuthentificationAdminPresenter();
+
         adminPresenter.setModel(adminModel);
+        
         AdminViewYearXYStudents adminView = new AdminViewYearXYStudents();
         adminPresenter.setView(adminView);
         primaryStage=adminView;

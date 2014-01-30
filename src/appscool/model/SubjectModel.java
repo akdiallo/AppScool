@@ -6,7 +6,7 @@ package appscool.model;
 
 /**
  *
- * @author khadre
+ * @author minalouta
  */
 public class SubjectModel {
      private String intitule;
