@@ -4,13 +4,12 @@
  */
 package appscool.presenter;
 
-import appscool.model.AdministratorModel;
+import appscool.model.AbstractModel;
 
 /**
  *
  * @author khadre
  */
-public class AuthentificationAdminPresenter extends AbstractPresenter{
-    private AdministratorModel admin ;
-
+public class AbstractPresenter {
+    private AbstractModel model;
 }

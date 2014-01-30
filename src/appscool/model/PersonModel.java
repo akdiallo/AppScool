@@ -8,7 +8,7 @@ package appscool.model;
  *
  * @author khadre
  */
-public abstract class PersonModel {
+public abstract class PersonModel extends AbstractModel {
 
     // Attributes
     private String name;

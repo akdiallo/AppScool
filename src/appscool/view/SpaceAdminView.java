@@ -6,15 +6,10 @@
 
 package appscool.view;
 
-import javafx.stage.Stage;
-
 /**
  *
  * @author amma
  */
-public class SpaceAdminView extends Stage{
-    public SpaceAdminView(){
-        
-    }
-    
+public class SpaceAdminView extends AbstractView{
+
 }
