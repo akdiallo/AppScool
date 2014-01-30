@@ -4,10 +4,12 @@
  */
 package appscool.view;
 
+import javafx.stage.Stage;
+
 /**
  *
  * @author khadre
  */
-public class AbstractView extends Stage{
+public interface AbstractView {
 
 }

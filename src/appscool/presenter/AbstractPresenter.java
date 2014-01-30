@@ -5,11 +5,22 @@
 package appscool.presenter;
 
 import appscool.model.AbstractModel;
+import appscool.view.AbstractView;
 
 /**
  *
  * @author khadre
  */
-public class AbstractPresenter {
-    private AbstractModel model;
+public interface AbstractPresenter {
+    // must have a variable model
+    // must have a variable view
+
+    // getters
+    public AbstractView getView();
+    public AbstractModel getModel();
+
+    // setters
+    public void setView(AbstractView view);
+    public void setModel(AbstractModel model);
+
 }
