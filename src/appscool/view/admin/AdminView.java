@@ -8,7 +8,7 @@ package appscool.view.admin;
 
 import appscool.AppScool;
 import appscool.presenter.AbstractPresenter;
-import appscool.presenter.AuthentificationAdminPresenter;
+import appscool.presenter.YearXYStudentsAdminPresenter;
 import appscool.view.AbstractView;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -27,7 +27,7 @@ import javafx.stage.Stage;
  */
 public class AdminView extends Stage implements AbstractView{
 
-    private AuthentificationAdminPresenter presenter;
+    private YearXYStudentsAdminPresenter presenter;
 
     public AdminView(){
     StackPane root=new StackPane();
@@ -90,6 +90,6 @@ public class AdminView extends Stage implements AbstractView{
     @Override
     public void setPresenter(AbstractPresenter presenter) {
         // we do a casting
-        this.presenter = (AuthentificationAdminPresenter) presenter;
+        this.presenter = (YearXYStudentsAdminPresenter) presenter;
     }
 }

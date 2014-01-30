@@ -6,7 +6,7 @@ package appscool;
 
 
 import appscool.model.AdministratorModel;
-import appscool.presenter.AuthentificationAdminPresenter;
+import appscool.presenter.YearXYStudentsAdminPresenter;
 import appscool.view.admin.AdminViewYearXYStudents;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -24,7 +24,7 @@ public class AppScool extends Application{
     public void start(Stage primaryStage){
 
         AdministratorModel adminModel = new AdministratorModel();
-        AuthentificationAdminPresenter adminPresenter = new AuthentificationAdminPresenter();
+        YearXYStudentsAdminPresenter adminPresenter = new YearXYStudentsAdminPresenter();
 
         adminPresenter.setModel(adminModel);
         

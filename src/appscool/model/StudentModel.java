@@ -4,6 +4,8 @@
  */
 package appscool.model;
 
+import java.util.List;
+
 /**
  *
  * @author minalouta
@@ -12,6 +14,8 @@ public class StudentModel {
     private int numEleve;
     private String adresseParents;
     private int numAssurance;
+    private List <SubjectModel> SubjectList;
+    private  List <GradeModel> gradesList;
 
    //getters
     public int getNumEleve(){
@@ -22,6 +26,12 @@ public class StudentModel {
     }
     public int getNumAssurance(){
         return numAssurance;
+    }
+    public List getSubjectList(){
+        return SubjectList;
+    }
+    public List getgradesList(){
+        return gradesList;
     }
 
     //setter
