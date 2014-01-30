@@ -25,7 +25,7 @@ public class EspaceAdmin3 {
         BorderPane root=new BorderPane();
         root.setPadding(new Insets(10,10,10,10));
         
-        HBox hbox=new HBox(50);
+        HBox hbox=new HBox();
         root.setTop(hbox);
         AnchorPane hboxAnchor=new AnchorPane();
         hbox.getChildren().add(hboxAnchor);
