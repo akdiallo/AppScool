@@ -4,9 +4,9 @@
  */
 package appscool;
 
-import appscool.view.admin.EspaceAdmin4;
+
+import appscool.view.admin.AdminViewYearXYStudents;
 import javafx.application.Application;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
@@ -19,8 +19,7 @@ public class AppScool extends Application{
     private double height=450;
     @Override
     public void start(Stage primaryStage){
-        primaryStage=new EspaceAdmin4();
-        //primaryStage.setScene(new Scene(root,500,500));
+        primaryStage=new AdminViewYearXYStudents();
         primaryStage.show();        
 
 
