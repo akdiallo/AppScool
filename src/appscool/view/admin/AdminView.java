@@ -6,19 +6,29 @@
 
 package appscool.view.admin;
 
+import appscool.AppScool;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class EspaceAdmin1{
+public class AdminView extends Stage{
     
-    /*public EspaceAdmin1(){
+    public AdminView(){
     StackPane root=new StackPane();
         root.setPadding(new Insets(15,5,20,5));
         Scene scene=new Scene(root,500,500);
-        scene.getStylesheets().add(AppScool.class.getResource("AppScool.css").toExternalForm());
+        scene.getStylesheets().add(AppScool.class.getResource("AdminView.css").toExternalForm());
         
         HBox hbox=new HBox(150);
         hbox.setAlignment(Pos.TOP_LEFT);
@@ -63,5 +73,7 @@ public class EspaceAdmin1{
         Text espaceAdmin=new Text("Espace - Administrateur");
         hbox2.getChildren().add(espaceAdmin);
         root.getChildren().add(hbox2);
-    }*/
+        
+        this.setScene(scene);
+    }
 }

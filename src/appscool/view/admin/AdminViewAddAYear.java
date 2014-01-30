@@ -13,15 +13,16 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class EspaceAdmin2 {
+public class AdminViewAddAYear extends Stage{
     private double width=500;
     private double height=450;
-    public EspaceAdmin2(){
+    public AdminViewAddAYear(){
         GridPane root=new GridPane();
         root.setVgap(30);
         root.setPadding(new Insets(10,5,10,5));
@@ -62,5 +63,7 @@ public class EspaceAdmin2 {
         hbox5.getChildren().add(new Text("Espace - Administrateur - Année 20XX-20YY"));
         hbox5.setAlignment(Pos.BOTTOM_CENTER);
         root.addRow(6,hbox5);
+        
+        this.setScene(scene);
     }
 }

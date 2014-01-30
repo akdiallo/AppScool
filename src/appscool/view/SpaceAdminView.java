@@ -6,6 +6,7 @@
 
 package appscool.view;
 
+import appscool.presenter.AbstractPresenter;
 import javafx.stage.Stage;
 
 
@@ -14,5 +15,15 @@ import javafx.stage.Stage;
  * @author amma
  */
 public class SpaceAdminView extends Stage implements AbstractView {
+
+    @Override
+    public AbstractPresenter getPresenter() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setPresenter(AbstractPresenter presenter) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
