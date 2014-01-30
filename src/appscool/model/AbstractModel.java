@@ -8,6 +8,6 @@ package appscool.model;
  *
  * @author khadre
  */
-public class AbstractModel {
+public interface AbstractModel {
 
 }

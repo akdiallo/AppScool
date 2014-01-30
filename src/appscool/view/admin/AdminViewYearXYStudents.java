@@ -6,6 +6,8 @@
 
 package appscool.view.admin;
 
+import appscool.presenter.AbstractPresenter;
+import appscool.view.AbstractView;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
@@ -23,17 +25,17 @@ import javafx.stage.Stage;
  *
  * @author amma
  */
-public class AdminViewYearXYStudents extends Stage{
+public class AdminViewYearXYStudents extends Stage implements AbstractView{
     public AdminViewYearXYStudents(){
         BorderPane root=new BorderPane();
         root.setPadding(new Insets(10,5,10,5));
-        
+
         HBox hbox=new HBox();
         root.setTop(hbox);
         AnchorPane hboxAnchor=new AnchorPane();
         hbox.getChildren().add(hboxAnchor);
         HBox.setHgrow(hboxAnchor, Priority.ALWAYS);
-        
+
         Label welcome=new Label("Bienvenue sur votre espace de gestion M. XY");
         HBox hb=new HBox(10);
         hb.getChildren().addAll(new Button("Retour"),
@@ -42,13 +44,13 @@ public class AdminViewYearXYStudents extends Stage{
         hboxAnchor.setLeftAnchor(welcome,0.0);
         hboxAnchor.setRightAnchor(hb,0.0);
         hboxAnchor.getChildren().addAll(welcome,hb);
-       
+
         GridPane grid=new GridPane();
         grid.setPadding(new Insets(30,0,30,0));
         grid.setHgap(20);
         grid.setVgap(50);
         root.setCenter(grid);
-        
+
         Button addAStudent=new Button("Ajouter un élève");
         addAStudent.setPrefSize(150, 40);
         grid.add(addAStudent,0,0);
@@ -78,10 +80,20 @@ public class AdminViewYearXYStudents extends Stage{
         Button emptyBtn3=new Button("..............");
         emptyBtn3.setPrefSize(150, 40);
         grid.add(emptyBtn3,2,2);
-        
+
         Label admin=new Label("Espace - Administrateur - Année 20XX-20YY");
         root.setBottom(admin);
         this.setScene(new Scene(root,500,500));
     }
-    
+
+    @Override
+    public AbstractPresenter getPresenter() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setPresenter(AbstractPresenter presenter) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

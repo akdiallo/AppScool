@@ -19,17 +19,17 @@ public class AuthentificationAdminPresenter implements AbstractPresenter{
 
     @Override
     public AbstractView getView() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return authentificationView;
     }
 
     @Override
     public AbstractModel getModel() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return authentificationModel;
     }
 
     @Override
     public void setView(AbstractView view) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
