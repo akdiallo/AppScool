@@ -14,6 +14,10 @@ and open the template in the editor.
   -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
 
+.root{
+    -fx-background-color: linear-gradient(lightblue,blueviolet);
+}
+
 #signout {
     -fx-text-fill: black;
     -fx-font-family: "Arial Narrow";
@@ -36,4 +40,8 @@ and open the template in the editor.
     -fx-text-fill: black;
     -fx-font-size:14 px;
     -fx-font-family: "Tahoma";
+
+}
+#label-etat{
+    -fx-style-background: white;
 }

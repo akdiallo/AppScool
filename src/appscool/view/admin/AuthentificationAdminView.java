@@ -18,18 +18,17 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class AuthentificationAdminView{
-   /*
-    GridPane grid;
+public class AuthentificationAdminView extends Stage{
+   
     public AuthentificationAdminView(){
         
-        this=new super(grid,500,500,Color.LIGHTBLUE);
-        grid=new GridPane();
+        GridPane grid=new GridPane();
         grid.setAlignment(Pos.CENTER);
         grid.setVgap(20);
         grid.setPadding(new Insets(25,25,25,10));
@@ -58,12 +57,12 @@ public class AuthentificationAdminView{
         btnConnection.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent e){
-                btnConnection.setText("Se connecter cliqué");
+              fermer();
             }
         });
+        
         btnConnection.setMaxWidth(100);
         vbox2.getChildren().add(btnConnection);
-        
         Button btnReturn=new Button("Retour");
         btnReturn.setMaxWidth(100);
         vbox2.getChildren().add(btnReturn);
@@ -72,5 +71,12 @@ public class AuthentificationAdminView{
         Text authen=new Text("Authentification - Administrateur");
         authen.setTranslateY(50);
         grid.add(authen,1,9);
-    }*/
+        
+        this.setScene(scene);
+        this.show();
+        }
+        public void fermer(){
+            this.close();
+            AdminView fen=new AdminView();
+        }
 }

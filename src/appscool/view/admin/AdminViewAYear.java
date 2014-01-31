@@ -7,6 +7,7 @@
 package appscool.view.admin;
 
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
@@ -15,12 +16,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class AdminViewAYear {
+public class AdminViewAYear extends Stage{
     public AdminViewAYear(){
         BorderPane root=new BorderPane();
         root.setPadding(new Insets(10,10,10,10));
@@ -81,6 +83,8 @@ public class AdminViewAYear {
         
         Label admin=new Label("Espace Administrateur Année 20XX - 20YY");
         root.setBottom(admin);
+        this.setScene(new Scene(root,500,500));
+        this.show();
     }
     
 }
