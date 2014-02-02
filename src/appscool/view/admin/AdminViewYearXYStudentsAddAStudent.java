@@ -28,6 +28,8 @@ import javafx.stage.Stage;
  * @author amma
  */
 public class AdminViewYearXYStudentsAddAStudent extends Stage{
+    protected Label position;
+    protected AnchorPane anchor;
     
     public AdminViewYearXYStudentsAddAStudent(){
         BorderPane root=new BorderPane();
@@ -48,11 +50,11 @@ public class AdminViewYearXYStudentsAddAStudent extends Stage{
         hboxAnchor.setRightAnchor(hb,0.0);
         hboxAnchor.getChildren().addAll(welcome,hb);
         
-        AnchorPane anchor=new AnchorPane();
+        anchor=new AnchorPane();
         root.setCenter(anchor);
         anchor.setPadding(new Insets(25,0,10,0));
         
-        Label position=new Label("Année 20XX-20YY >Les élèves > Ajouter un élève");
+        position=new Label("Année 20XX-20YY >Les élèves > Ajouter un élève");
         anchor.setTopAnchor(position,0.0);
         anchor.setLeftAnchor(position,0.0);
         
@@ -131,8 +133,13 @@ public class AdminViewYearXYStudentsAddAStudent extends Stage{
         
         anchor.getChildren().addAll(id,vbleft,vbright,tilebtn);
         
-        Label admin=new Label("Espace - Administrateur - Année 20XX- Année 20YY");
-        root.setBottom(admin);
+        TilePane tile=new TilePane();
+        tile.setPrefColumns(4);
+        tile.setPrefRows(1);
+        tile.getChildren().addAll(new Label(" "),new Label("Espace - Administrateur -"),
+                new Text(" Année 20XX- Année 20YY"),new Label(" ")
+        );
+        root.setBottom(tile);
         
         Scene scene=new Scene(root,500,600);
         scene.getStylesheets().add(

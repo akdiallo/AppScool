@@ -12,11 +12,13 @@ import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 /**
@@ -43,11 +45,26 @@ public class AdminViewYearXYStudents extends Stage{
         hboxAnchor.setRightAnchor(hb,0.0);
         hboxAnchor.getChildren().addAll(welcome,hb);
        
+        AnchorPane anchor=new AnchorPane();
+        root.setCenter(anchor);
+        anchor.setPadding(new Insets(15,0,10,0));
+        
+        Label position=new Label("Année 20XX - 20YY >Les élèves");
+        anchor.setTopAnchor(position,10.0);
+        anchor.setLeftAnchor(position,0.0);
+        
+        TextField searchingToolbar=new TextField("Recherche de l'élève XY");
+        anchor.setRightAnchor(searchingToolbar,0.0);
+        anchor.setTopAnchor(searchingToolbar,0.0);
+        
         GridPane grid=new GridPane();
-        grid.setPadding(new Insets(30,0,30,0));
         grid.setHgap(20);
         grid.setVgap(50);
-        root.setCenter(grid);
+        anchor.setLeftAnchor(grid,0.0);
+        anchor.setTopAnchor(grid,50.0);
+        anchor.setRightAnchor(grid,0.0);
+        
+        anchor.getChildren().addAll(position,searchingToolbar,grid);
         
         Button addAStudent=new Button("Ajouter un élève");
         addAStudent.setPrefSize(150, 40);
@@ -55,11 +72,11 @@ public class AdminViewYearXYStudents extends Stage{
         Button modifyAStudent=new Button("Modifier un élève");
         modifyAStudent.setPrefSize(150, 40);
         grid.add(modifyAStudent,1,0);
-        Button marksOfAStudent=new Button("Consulter les notes d'un élève");
+        Button marksOfAStudent=new Button("Consulter les notes d'un\nélève");
         marksOfAStudent.setPrefSize(150, 40);
         grid.setHalignment(marksOfAStudent,HPos.RIGHT);
         grid.add(marksOfAStudent,2,0);
-        Button listOfStudents=new Button("Listes des élèves de l'Ètablissement");
+        Button listOfStudents=new Button("Listes des élèves de\nl'Ètablissement");
         listOfStudents.setPrefSize(150, 40);
         grid.add(listOfStudents,0,1);
         Button stat=new Button("Statistiques");
@@ -79,9 +96,15 @@ public class AdminViewYearXYStudents extends Stage{
         emptyBtn3.setPrefSize(150, 40);
         grid.add(emptyBtn3,2,2);
         
-        Label admin=new Label("Espace - Administrateur - Année 20XX-20YY");
-        root.setBottom(admin);
+       TilePane tile=new TilePane();
+        tile.setPrefColumns(4);
+        tile.setPrefRows(1);
+        tile.getChildren().addAll(new Label(" "),new Label("Espace - Administrateur -"),
+                new Label(" Année 20XX- Année 20YY"),new Label(" ")
+        );
+        root.setBottom(tile);
         this.setScene(new Scene(root,500,500));
+        this.show();
     }
     
 }

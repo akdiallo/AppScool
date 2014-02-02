@@ -5,7 +5,7 @@
 package appscool;
 
 
-import appscool.view.admin.AdminViewYearXYStudentsAddAStudent;
+import appscool.view.admin.AdminYearXYStudentsDisplayAStudentEraseView;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -17,7 +17,7 @@ public class AppScool extends Application{
 
     @Override
     public void start(Stage primaryStage){
-        primaryStage=new AdminViewYearXYStudentsAddAStudent();
+        primaryStage=new AdminYearXYStudentsDisplayAStudentEraseView();
     }
     public static void main(String[] args) {
         launch(args);
