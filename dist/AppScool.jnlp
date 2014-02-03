@@ -11,11 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="AppScool.jar" size="20094" download="eager" />
-=======
-    <jar href="AppScool.jar" size="18562" download="eager" />
->>>>>>> 43bd10e48430e6be9573b9894517e3768719794f
+    <jar href="AppScool.jar" size="23284" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AppScool" >
     <param name="requiredFXVersion" value="2.2+"/>
