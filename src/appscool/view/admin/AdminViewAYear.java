@@ -7,20 +7,23 @@
 package appscool.view.admin;
 
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class AdminViewAYear {
+public class AdminViewAYear extends Stage{
     public AdminViewAYear(){
         BorderPane root=new BorderPane();
         root.setPadding(new Insets(10,10,10,10));
@@ -42,7 +45,11 @@ public class AdminViewAYear {
         
         AnchorPane anchor=new AnchorPane();
         root.setCenter(anchor);
-        anchor.setPadding(new Insets(50,0,10,0));
+        anchor.setPadding(new Insets(30,0,10,0));
+        
+        Label position=new Label("Année 20XX - 20YY");
+        anchor.setTopAnchor(position,0.0);
+        anchor.setLeftAnchor(position,0.0);
         
         VBox vbox1=new VBox(30);
         vbox1.getChildren().addAll(
@@ -72,15 +79,22 @@ public class AdminViewAYear {
             new Text("Dernière date de connextion: xx/yy/zzzz")
             );
         anchor.setRightAnchor(vbox2,0.0);
-        anchor.setTopAnchor(vbox2,0.0);
+        anchor.setTopAnchor(vbox2,40.0);
         anchor.setBottomAnchor(vbox2,0.0);
         anchor.setLeftAnchor(vbox1,0.0);
-        anchor.setTopAnchor(vbox1,0.0);
+        anchor.setTopAnchor(vbox1,40.0);
         anchor.setBottomAnchor(vbox1,0.0);
-        anchor.getChildren().addAll(vbox1,vbox2);
+        anchor.getChildren().addAll(position,vbox1,vbox2);
         
-        Label admin=new Label("Espace Administrateur Année 20XX - 20YY");
-        root.setBottom(admin);
+        TilePane tile=new TilePane();
+        tile.setPrefColumns(4);
+        tile.setPrefRows(1);
+        tile.getChildren().addAll(new Label(" "),new Label("Espace - Administrateur -"),
+                new Text(" Année 20XX- Année 20YY"),new Label(" ")
+        );
+        root.setBottom(tile);
+        this.setScene(new Scene(root,500,500));
+        this.show();
     }
     
 }

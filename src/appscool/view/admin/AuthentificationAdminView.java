@@ -6,14 +6,30 @@
 
 package appscool.view.admin;
 
+<<<<<<< HEAD
 import appscool.presenter.AbstractPresenter;
 import appscool.view.AbstractView;
+=======
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+>>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
 import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
+<<<<<<< HEAD
 public class AuthentificationAdminView extends Stage implements AbstractView{
 
     @Override
@@ -31,6 +47,13 @@ public class AuthentificationAdminView extends Stage implements AbstractView{
 
         this=new super(grid,500,500,Color.LIGHTBLUE);
         grid=new GridPane();
+=======
+public class AuthentificationAdminView extends Stage{
+   
+    public AuthentificationAdminView(){
+        
+        GridPane grid=new GridPane();
+>>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
         grid.setAlignment(Pos.CENTER);
         grid.setVgap(20);
         grid.setPadding(new Insets(25,25,25,10));
@@ -59,12 +82,16 @@ public class AuthentificationAdminView extends Stage implements AbstractView{
         btnConnection.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent e){
-                btnConnection.setText("Se connecter cliqué");
+              fermer();
             }
         });
+        
         btnConnection.setMaxWidth(100);
         vbox2.getChildren().add(btnConnection);
+<<<<<<< HEAD
 
+=======
+>>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
         Button btnReturn=new Button("Retour");
         btnReturn.setMaxWidth(100);
         vbox2.getChildren().add(btnReturn);
@@ -73,5 +100,12 @@ public class AuthentificationAdminView extends Stage implements AbstractView{
         Text authen=new Text("Authentification - Administrateur");
         authen.setTranslateY(50);
         grid.add(authen,1,9);
-    }*/
+        
+        this.setScene(scene);
+        this.show();
+        }
+        public void fermer(){
+            this.close();
+            AdminView fen=new AdminView();
+        }
 }

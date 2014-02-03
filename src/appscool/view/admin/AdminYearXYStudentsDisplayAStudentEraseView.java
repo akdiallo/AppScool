@@ -6,7 +6,9 @@
 
 package appscool.view.admin;
 
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -15,19 +17,23 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-public class AdminViewAddAYear extends Stage{
-    private double width=500;
-    private double height=500;
-    public AdminViewAddAYear(){
-        
-        
+public class AdminYearXYStudentsDisplayAStudentEraseView extends Stage{
+    
+    public double width=500,height=500;
+    
+    public AdminYearXYStudentsDisplayAStudentEraseView(){
+    
         BorderPane border=new BorderPane();
         border.setPadding(new Insets(10,5,20,5));
         
@@ -42,66 +48,61 @@ public class AdminViewAddAYear extends Stage{
         hboxAnchor.setLeftAnchor(welcome,0.0);
         hboxAnchor.setRightAnchor(signout,0.0);
         hboxAnchor.getChildren().addAll(welcome,signout);
-       
+        
         AnchorPane anchor=new AnchorPane();
         border.setCenter(anchor);
         anchor.setPadding(new Insets(25,0,10,0));
         
-        Label position=new Label("Ajouter une année");
+        Label position=new Label("Année 20XX-20YY >Les élèves >Afficher un élève >Effacer cet élève");
         anchor.setTopAnchor(position,0.0);
         anchor.setLeftAnchor(position,0.0);
         
+        StackPane stack=new StackPane();
+        anchor.setLeftAnchor(stack,width/6);
+        anchor.setTopAnchor(stack,height/4);
+        anchor.getChildren().addAll(position,stack);
+        
+        Rectangle r=new Rectangle();
+        r.setWidth(2*width/3);
+        r.setHeight(height/4);
+        r.setArcHeight(30);
+        r.setArcWidth(30);
+        r.setFill(Color.LIGHTGREEN);
+        
         GridPane grid=new GridPane();
-        grid.setHgap(20);
-        grid.setVgap(50);
-        anchor.setLeftAnchor(grid,0.0);
-        anchor.setTopAnchor(grid,40.0);
-        anchor.setRightAnchor(grid,0.0);
+        grid.setVgap(10);
+        grid.setAlignment(Pos.TOP_CENTER);
+        Label rUSure=new Label("Êtes vous sûre de vouloir supprimer cet individu?");
+        rUSure.setFont(new Font("Arial",14));
+        Label caution=new Label("Attention: Ce dernier ne figurera plus sur la base de données");
+        caution.setFont(new Font("Arial",11));
         
+        GridPane btnsgrid=new GridPane();
+        btnsgrid.setAlignment(Pos.CENTER);
+        HBox btnshbox=new HBox(10);
+        btnsgrid.add(btnshbox, 0, 0);
         
-        Button btn11=new Button("Incrémenter l'année");
-        btn11.setPrefSize(150, 40);
-        grid.add(btn11,0,0);
-        
-        Button btn21 = new Button("Base Vierge");
-        btn21.setPrefSize(150, 40);
-        grid.add(btn21,1,0);
-        
-        Button btn31= new Button("Mise à jour des infos\n de l'établissement");
-        btn31.setPrefSize(150, 40);
-        grid.add(btn31,2,0);
-        
-        Button btn12=new Button("Copier les personnes de\n l'année précédente");
-        btn12.setPrefSize(150, 40);
-        grid.add(btn12,0,1);
-        
-        Button btn22=new Button("Copier les classes de \nl'année précédente");
-        btn22.setPrefSize(150, 40);
-        grid.add(btn22,1,1);
-        
-        Button btn32=new Button("Copier les matières de\n l'année précédente");
-        btn32.setPrefSize(150, 40);
-        grid.add(btn32,2,1);
-                                   
-        
-        Button valid=new Button("Valider");
-        valid.setPrefSize(150, 30);
+        Button conf=new Button("Confirmer");
         Button cancel=new Button("Annuler");
-        cancel.setPrefSize(150, 30);
-        grid.add(valid, 0, 2);
-        grid.add(cancel,2,2);
+        btnshbox.getChildren().addAll(conf,cancel);
         
-        anchor.getChildren().addAll(position,grid);
+        grid.add(rUSure, 0, 0);
+        grid.add(caution,0,1);
+        grid.add(btnsgrid,0,2);
+         
+        stack.getChildren().addAll(r,grid);
         
-       TilePane tile=new TilePane();
+        TilePane tile=new TilePane();
         tile.setPrefColumns(4);
         tile.setPrefRows(1);
         tile.getChildren().addAll(new Label(" "),new Label("Espace - Administrateur -"),
                 new Label(" Année 20XX- Année 20YY"),new Label(" ")
         );
         border.setBottom(tile);
-        Scene scene=new Scene(border,width,height);
-        this.setScene(scene);
+        
+        this.setScene(new Scene(border,width,height));
+        this.setResizable(false);
         this.show();
     }
+    
 }
