@@ -29,12 +29,12 @@ public class AuthentificationAdminPresenter implements AbstractPresenter{
 
     @Override
     public void setView(AbstractView view) {
-        
+        this.authentificationView = (AuthentificationAdminView)view;
     }
 
     @Override
     public void setModel(AbstractModel model) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.authentificationModel = (AdministratorModel) model;
     }
 
 }

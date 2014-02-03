@@ -46,37 +46,30 @@ public class AdminViewYearXYStudents extends Stage implements AbstractView{
         hboxAnchor.setLeftAnchor(welcome,0.0);
         hboxAnchor.setRightAnchor(hb,0.0);
         hboxAnchor.getChildren().addAll(welcome,hb);
-<<<<<<< HEAD
 
-=======
-       
         AnchorPane anchor=new AnchorPane();
         root.setCenter(anchor);
         anchor.setPadding(new Insets(15,0,10,0));
-        
+
         Label position=new Label("Année 20XX - 20YY >Les élèves");
         anchor.setTopAnchor(position,10.0);
         anchor.setLeftAnchor(position,0.0);
-        
+
         TextField searchingToolbar=new TextField("Recherche de l'élève XY");
         anchor.setRightAnchor(searchingToolbar,0.0);
         anchor.setTopAnchor(searchingToolbar,0.0);
-        
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
+
+
         GridPane grid=new GridPane();
         grid.setHgap(20);
         grid.setVgap(50);
-<<<<<<< HEAD
-        root.setCenter(grid);
 
-=======
         anchor.setLeftAnchor(grid,0.0);
         anchor.setTopAnchor(grid,50.0);
         anchor.setRightAnchor(grid,0.0);
-        
+
         anchor.getChildren().addAll(position,searchingToolbar,grid);
-        
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
+
         Button addAStudent=new Button("Ajouter un élève");
         addAStudent.setPrefSize(150, 40);
         grid.add(addAStudent,0,0);
@@ -106,12 +99,8 @@ public class AdminViewYearXYStudents extends Stage implements AbstractView{
         Button emptyBtn3=new Button("..............");
         emptyBtn3.setPrefSize(150, 40);
         grid.add(emptyBtn3,2,2);
-<<<<<<< HEAD
 
-        Label admin=new Label("Espace - Administrateur - Année 20XX-20YY");
-        root.setBottom(admin);
-=======
-        
+
        TilePane tile=new TilePane();
         tile.setPrefColumns(4);
         tile.setPrefRows(1);
@@ -119,7 +108,6 @@ public class AdminViewYearXYStudents extends Stage implements AbstractView{
                 new Label(" Année 20XX- Année 20YY"),new Label(" ")
         );
         root.setBottom(tile);
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
         this.setScene(new Scene(root,500,500));
         this.show();
     }

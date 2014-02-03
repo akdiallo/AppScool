@@ -6,12 +6,11 @@
 
 package appscool.view.admin;
 
-<<<<<<< HEAD
+
 import appscool.presenter.AbstractPresenter;
 import appscool.view.AbstractView;
-=======
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import java.awt.event.ActionEvent;
+import java.beans.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -22,14 +21,16 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
+
 import javafx.stage.Stage;
 
 /**
  *
  * @author amma
  */
-<<<<<<< HEAD
+
+
+
 public class AuthentificationAdminView extends Stage implements AbstractView{
 
     @Override
@@ -41,19 +42,10 @@ public class AuthentificationAdminView extends Stage implements AbstractView{
     public void setPresenter(AbstractPresenter presenter) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-   /*
-    GridPane grid;
     public AuthentificationAdminView(){
 
-        this=new super(grid,500,500,Color.LIGHTBLUE);
-        grid=new GridPane();
-=======
-public class AuthentificationAdminView extends Stage{
-   
-    public AuthentificationAdminView(){
-        
         GridPane grid=new GridPane();
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
+
         grid.setAlignment(Pos.CENTER);
         grid.setVgap(20);
         grid.setPadding(new Insets(25,25,25,10));
@@ -79,19 +71,15 @@ public class AuthentificationAdminView extends Stage{
         grid.add(vbox2,1,3,1,2);
 
         final Button btnConnection=new Button("Se connecter");
-        btnConnection.setOnAction(new EventHandler<ActionEvent>(){
+        /*btnConnection.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent e){
               fermer();
             }
-        });
-        
+        });*/
+
         btnConnection.setMaxWidth(100);
         vbox2.getChildren().add(btnConnection);
-<<<<<<< HEAD
-
-=======
->>>>>>> cf2052ce206a93451c7aecdb6d4d5084f1ca611d
         Button btnReturn=new Button("Retour");
         btnReturn.setMaxWidth(100);
         vbox2.getChildren().add(btnReturn);
@@ -100,7 +88,7 @@ public class AuthentificationAdminView extends Stage{
         Text authen=new Text("Authentification - Administrateur");
         authen.setTranslateY(50);
         grid.add(authen,1,9);
-        
+
         this.setScene(scene);
         this.show();
         }
