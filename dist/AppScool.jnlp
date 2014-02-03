@@ -3,7 +3,7 @@
   <information>
     <title>AppScool</title>
     <vendor>khadre</vendor>
-    <description>null</description>
+    <description>Sample JavaFX 2.0 application.</description>
     <offline-allowed/>
   </information>
   <resources>
@@ -11,7 +11,11 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AppScool.jar" size="75612" download="eager" />
+    <jar href="AppScool.jar" size="80958" download="eager" />
+    <jar href="lib/deploy.jar" size="4064329" download="eager" />
+    <jar href="lib/javaws.jar" size="897652" download="eager" />
+    <jar href="lib/jfxrt.jar" size="15085395" download="eager" />
+    <jar href="lib/plugin.jar" size="1877279" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AppScool" >
     <param name="requiredFXVersion" value="2.2+"/>
