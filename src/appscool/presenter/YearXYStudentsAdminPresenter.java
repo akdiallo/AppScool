@@ -13,7 +13,7 @@ import appscool.view.admin.AuthentificationAdminView;
  *
  * @author khadre
  */
-public class AuthentificationAdminPresenter implements AbstractPresenter{
+public class YearXYStudentsAdminPresenter implements AbstractPresenter{
     private AdministratorModel authentificationModel ;
     private AuthentificationAdminView authentificationView;
 
@@ -29,12 +29,12 @@ public class AuthentificationAdminPresenter implements AbstractPresenter{
 
     @Override
     public void setView(AbstractView view) {
-        this.authentificationView = (AuthentificationAdminView)view;
+        
     }
 
     @Override
     public void setModel(AbstractModel model) {
-        this.authentificationModel = (AdministratorModel) model;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

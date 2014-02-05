@@ -5,7 +5,16 @@
 package appscool;
 
 
+
+import appscool.model.AbstractModel;
+import appscool.model.AdministratorModel;
+import appscool.presenter.AbstractPresenter;
+import appscool.presenter.AuthentificationAdminPresenter;
+
+import appscool.view.AbstractView;
 import appscool.view.admin.AdminYearXYStudentsDisplayAStudentEraseView;
+import appscool.view.admin.AuthentificationAdminView;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -18,7 +27,13 @@ public class AppScool extends Application{
     @Override
     public void start(Stage primaryStage){
 
-        primaryStage=new AdminYearXYStudentsDisplayAStudentEraseView();
+AbstractModel model = new AdministratorModel();
+        AbstractPresenter presenter = new AuthentificationAdminPresenter();
+        presenter.setModel(model);
+        AbstractView view = new AuthentificationAdminView();
+        presenter.setView(view);
+        primaryStage= (Stage)presenter.getView();
+
 
     }
     public static void main(String[] args) {
