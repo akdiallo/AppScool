@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.01171875" prefWidth="648.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Button layoutX="526.0" layoutY="27.0" mnemonicParsing="false" text="Déconnexion" textOverrun="CLIP" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="413.0" layoutY="27.0" mnemonicParsing="false" text="Retour" textFill="BLACK" />
+    <Button font="$x1" layoutX="91.0" layoutY="364.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Valider" wrapText="false" />
+    <Button font="$x1" layoutX="277.0" layoutY="364.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Effacer" wrapText="false" />
+    <Button font="$x1" layoutX="466.0" layoutY="365.0" minHeight="16.000091552734375" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Afficher" wrapText="false" />
+    <TextField layoutX="169.0" layoutY="127.0" prefWidth="350.0" />
+    <TextField layoutX="169.0" layoutY="99.0" prefWidth="350.0" />
+    <TextField layoutX="169.0" layoutY="184.0" prefWidth="350.0" />
+    <TextField layoutX="169.0" layoutY="156.0" prefWidth="350.0" />
+    <TextArea layoutX="169.0" layoutY="217.0" prefHeight="78.0" prefWidth="350.0" wrapText="true" />
+    <Text layoutX="36.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Période :" />
+    <Text layoutX="36.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note Contrôle Continu :" />
+    <Text layoutX="37.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note Composition :" />
+    <Text layoutX="36.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant :" />
+    <Text fontSmoothingType="GRAY" layoutX="36.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriptif :" />
+    <Button contentDisplay="LEFT" layoutX="530.0" layoutY="99.0" mnemonicParsing="false" text="Chercher" />
+    <Button layoutX="530.0" layoutY="127.0" mnemonicParsing="false" text="Chercher" />
+    <Text font="$x1" fontSmoothingType="LCD" layoutX="48.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur votre Espace de Gestion M. XY" />
+    <Text fontSmoothingType="LCD" layoutX="48.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY &gt;Mes classes&gt;Classe X&gt;Ajouter une note">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Text>
+    <Text layoutX="193.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Professeur- Année 20XX 20YY" />
+  </children>
+</AnchorPane>
