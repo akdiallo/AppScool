@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="650.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Button layoutX="530.0" layoutY="16.0" mnemonicParsing="false" text="Déconnexion" textOverrun="CLIP" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button font="$x1" layoutX="417.0" layoutY="16.0" mnemonicParsing="false" text="Retour" textFill="BLACK" />
+    <Text font="$x1" fontSmoothingType="LCD" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur votre Espace de Gestion M. XY" />
+    <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY &gt;Les matières&gt; Afficher une matière">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Text>
+    <TextField layoutX="216.0" layoutY="76.0" prefHeight="31.0" prefWidth="218.0" text="Entrer ID matière et appuyer sur Entrée" />
+    <Button font="$x1" layoutX="87.0" layoutY="386.0" mnemonicParsing="false" text="Imprimer" />
+    <Button font="$x1" layoutX="249.0" layoutY="386.0" mnemonicParsing="false" text="Modifier" />
+    <Button font="$x1" layoutX="417.0" layoutY="386.0" mnemonicParsing="false" text="Supprimer cette matière" />
+    <Text layoutX="210.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Administrateur- Année 20XX 20YY" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="217.0" layoutX="131.0" layoutY="136.0" stroke="$x2" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" width="410.0">
+      <fill>
+     
+          <Color blue="0.875" green="0.875" red="0.875" fx:id="x2" />
+      </fill>
+    </Rectangle>
+    <Text layoutX="142.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant :" />
+    <Text layoutX="141.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" />
+    <Text layoutX="141.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie :" />
+    <Text layoutX="140.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enseignant :" />
+    <Text layoutX="141.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe :" />
+    <Text layoutX="141.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coefficient :" />
+    <Text layoutX="140.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriptif :" />
+  </children>
+</AnchorPane>

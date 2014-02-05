@@ -26,15 +26,18 @@ public class AppScool extends Application{
 
     @Override
     public void start(Stage primaryStage){
-        AbstractModel model = new AdministratorModel();
+AbstractModel model = new AdministratorModel();
+
         AbstractPresenter presenter = new AuthentificationAdminPresenter();
         presenter.setModel(model);
         AbstractView view = new AuthentificationAdminView();
         presenter.setView(view);
         primaryStage= (Stage)presenter.getView();
 
+
     }
     public static void main(String[] args) {
         launch(args);
     }
+    //Test Abibatou
 }
