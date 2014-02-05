@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="appscool.view.admin.AdminViewController">
+  <children>
+    <Button id="signout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="23.0" prefWidth="91.0" text="Déconnetion" textAlignment="CENTER" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="271.0" text="Bienvenue dans votre espace de gestion M.XY" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <GridPane alignment="CENTER" hgap="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="617.0" vgap="20.0" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="89.0">
+      <children>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Année 20XX-20YY" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Année 20XX-20YY" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Année 20XX-20YY" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Année 20XX-20YY" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Année 20XX-20YY" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label alignment="CENTER" prefWidth="125.0" text="Validée" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label alignment="CENTER" prefWidth="125.0" text="Validée" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label alignment="CENTER" prefWidth="125.0" text="Validée" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" prefWidth="125.0" text="Validée" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label alignment="CENTER" prefWidth="125.0" text="En cours" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label alignment="CENTER" prefWidth="111.0" text="Etat" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" prefWidth="166.0" text="Actions" GridPane.columnIndex="2" GridPane.rowIndex="0">
+          <font>
+            <Font size="13.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label alignment="CENTER" prefHeight="19.0" prefWidth="140.0" text="Consulter" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Label alignment="CENTER" prefHeight="19.0" prefWidth="140.0" text="Consulter" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Label alignment="CENTER" prefHeight="19.0" prefWidth="140.0" text="Consulter" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" prefHeight="19.0" prefWidth="140.0" text="Consulter" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Label alignment="CENTER" prefHeight="19.0" prefWidth="140.0" text="Modifier" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Label alignment="CENTER" prefHeight="23.0" prefWidth="140.0" text="Supprimer" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Label alignment="CENTER" prefHeight="23.0" prefWidth="140.0" text="Supprimer" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Label alignment="CENTER" prefHeight="23.0" prefWidth="140.0" text="Supprimer" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" prefHeight="23.0" prefWidth="140.0" text="Supprimer" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <Label alignment="CENTER" prefHeight="23.0" prefWidth="140.0" text="Valider" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="138.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.0" minWidth="10.0" prefWidth="128.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.0" minWidth="10.0" prefWidth="140.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.0" minWidth="10.0" prefWidth="141.0" />
+      </columnConstraints>
+      <padding>
+        <Insets />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="128.0" minHeight="9.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="135.0" minHeight="3.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <HBox id="HBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="435.0" spacing="30.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="19.0">
+      <children>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Ajouter une année" />
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="270.0" text="Modifier les informations personnelles" />
+      </children>
+      <padding>
+        <Insets top="10.0" />
+      </padding>
+    </HBox>
+    <Label alignment="CENTER" font="$x1" minHeight="-Infinity" minWidth="-Infinity" prefWidth="205.0" text="Espace - Administrateur" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="272.0" />
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+  </padding>
+</AnchorPane>

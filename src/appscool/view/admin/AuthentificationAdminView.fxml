@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="appscoolnew.AuthentificationAdminViewController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="235.0" spacing="35.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="162.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" spacing="25.0">
+          <children>
+            <TextField id="login" alignment="CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="231.0" text="Login" />
+            <TextField id="password" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="231.0" text="Mot de passe" />
+          </children>
+        </VBox>
+        <VBox id="VBox" alignment="CENTER" spacing="20.0">
+          <children>
+            <Button id="submit" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="114.0" text="Se connecter">
+              <effect>
+                <DropShadow color="RED" />
+              </effect>
+              <font>
+                <Font size="14.0" fx:id="x1" />
+              </font>
+            </Button>
+            <Button id="cancel" focusTraversable="false" font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="114.0" text="Retour">
+              <effect>
+                <DropShadow blurType="GAUSSIAN" color="RED" />
+              </effect>
+            </Button>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+    <Label alignment="CENTER" contentDisplay="LEFT" font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="231.0" text="Authentification - Administration" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="163.0" />
+  </children>
+</AnchorPane>
