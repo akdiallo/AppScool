@@ -26,8 +26,8 @@ public class AppScool extends Application{
 
     @Override
     public void start(Stage primaryStage){
-
 AbstractModel model = new AdministratorModel();
+
         AbstractPresenter presenter = new AuthentificationAdminPresenter();
         presenter.setModel(model);
         AbstractView view = new AuthentificationAdminView();

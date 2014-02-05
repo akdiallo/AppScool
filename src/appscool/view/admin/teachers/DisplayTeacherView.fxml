@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Button layoutX="54.0" layoutY="328.0" mnemonicParsing="false" text="Modifier les informations" />
+        <Button layoutX="245.0" layoutY="328.0" mnemonicParsing="false" text="Supprimer ce professeur" />
+        <Button layoutX="426.0" layoutY="328.0" mnemonicParsing="false" text="Imprimer carte" />
+        <TextField layoutX="200.0" layoutY="76.0" prefWidth="200.0" promptText="Rechercher professeur" />
+      </children>
+    </Pane>
+    <Label layoutX="10.0" layoutY="16.0" text="Bienvenue sur votre espace" />
+    <Label layoutX="437.0" layoutY="372.0" text="Espace Admin - Annee 13/14" />
+    <Button layoutX="422.0" layoutY="12.0" mnemonicParsing="false" text="Retour" />
+    <Button layoutX="492.0" layoutY="12.0" mnemonicParsing="false" text="Déconnexion" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="200.0" layoutX="48.0" layoutY="100.0" stroke="TRANSPARENT" strokeType="INSIDE" width="487.0000915527344" />
+    <Label layoutX="54.0" layoutY="112.0" text="Annee scolaire 13/14" />
+    <Label layoutX="34.0" layoutY="53.0" text="Annee 20XX-20YY &gt;Les professeurs&gt; Afficher un professeur &gt;Afficher un professeur" />
+    <ImageView fitHeight="94.5" fitWidth="126.0" layoutX="395.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="file:/D:/Development/adt-bundle-windows/workspace/Teere_v2/res/drawable-hdpi/defaultflag.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="67.0" layoutY="131.0" text="Nom :" />
+    <Label layoutX="215.0" layoutY="134.0" text="Prenom :" />
+    <Label layoutX="67.0" layoutY="155.0" text="Date de naissance :" />
+    <Label layoutX="216.0" layoutY="155.0" prefWidth="98.0001220703125" text="Lieu de naissance :" />
+    <Label layoutX="68.0" layoutY="184.0" text="Sexe :" />
+    <Label layoutX="215.0" layoutY="184.0" text="Numéro carte Id :" />
+    <Label layoutX="67.0" layoutY="209.0" text="Numéro national :" />
+    <Label layoutX="215.0" layoutY="209.0" text="Adresse :" />
+    <Label layoutX="68.0" layoutY="240.0" text="Email :" />
+    <Label layoutX="216.0" layoutY="240.0" text="Téléphone fixe:" />
+    <Label layoutX="68.0" layoutY="272.0" text="Téléphone portable :" />
+  </children>
+</AnchorPane>

@@ -22,6 +22,7 @@ public class ClasseModel {
 
     //Definition des Getters
 
+
     public String getIntitule(){
         return intitule;
     }
