@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="appscool.view.admin.AdminAYearViewController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" layoutY="0.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.999900000002526" prefWidth="680.0" HBox.hgrow="ALWAYS">
+          <children>
+            <Label id="welcome" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="270.0" text="Bienvenue dans votre espace de gestion M.XY" textAlignment="JUSTIFY" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <font>
+                <Font size="13.0" fx:id="x1" />
+              </font>
+            </Label>
+            <HBox id="HBox" alignment="CENTER" spacing="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="98.0" text="Retour" />
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="98.0" text="Déconnection" />
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+      </children>
+      <padding>
+        <Insets top="10.0" />
+      </padding>
+    </HBox>
+    <Label id="admin" alignment="CENTER" font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="270.0" text="Espace Administrateur - Année 20XX - 20YY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="233.0" />
+    <Label id="year" alignment="CENTER" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.999908447265625" prefWidth="121.0" text="Année 20XX - 20YY" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" />
+    <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="150.0" vgap="10.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="138.0">
+      <children>
+        <Button id="students" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Les élèves" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button id="teachers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Les professeurs" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button id="admin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Le personnel administratif" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button id="subjects" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Les matières" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button id="classes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Les classes" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Button id="classes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Les administrateurs" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <StackPane id="stack" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="500.0" AnchorPane.bottomAnchor="52.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="138.0">
+      <children>
+        <Rectangle id="rectangle" arcHeight="134.0" arcWidth="124.0" fill="LIGHTGREEN" height="389.0" stroke="BLACK" strokeLineCap="SQUARE" strokeLineJoin="MITER" strokeType="CENTERED" width="472.0" />
+        <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="273.0" vgap="5.0">
+          <children>
+            <Label alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="168.0" text="Identifiant:XXXXXXXXX" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="0" GridPane.vgrow="NEVER" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Tel Port: 23456789876789" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Poste: fcvhkjhughbjk" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Tel fixe: 345678987678" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Email: aaaaa@kgbhkl.ghb" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <Label minWidth="-Infinity" prefWidth="270.0" text="Adresse: aydfuhjmlè_uoo" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <Label minWidth="-Infinity" prefWidth="260.0" text="Numéro national: XXXXXXX" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Label minWidth="-Infinity" prefWidth="270.0" text="Numéro carte id: XXXXXXXX" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Sexe: M" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Date de naissance: jj/mm/aaaa" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+            <Label alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="168.0" text="Nom: X" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER" />
+            <Label minWidth="-Infinity" prefWidth="168.0" text="Prénom: X" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label minWidth="-Infinity" prefWidth="270.0" text="Lieu de naissance: 9999999" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.vgrow="NEVER" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <StackPane.margin>
+            <Insets bottom="50.0" left="100.0" right="200.0" top="50.0" />
+          </StackPane.margin>
+        </GridPane>
+        <Label prefWidth="157.0" text="Dernière visite: jj/mm/aaaa" StackPane.alignment="BOTTOM_CENTER" />
+      </children>
+    </StackPane>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <stylesheets>
+    <URL value="@adminayearview.css" />
+  </stylesheets>
+</AnchorPane>
