@@ -33,4 +33,6 @@ public class SubjectModel {
      public void setCoef(int val){
          this.coefficient=val;
      }
+
+
 }

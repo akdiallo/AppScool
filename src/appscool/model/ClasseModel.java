@@ -8,6 +8,7 @@ package appscool.model;
 
 import java.util.List;
 
+
 /**
  *
  * @author Abibatou
@@ -16,9 +17,11 @@ public class ClasseModel {
     private String intitule;
     private String niveau;
     private int effectif;
+
     private List<StudentModel> studentList;
 
-    //Definition des Getteurs
+    //Definition des Getters
+
 
     public String getIntitule(){
         return intitule;
@@ -29,11 +32,13 @@ public class ClasseModel {
     public int getEffectif(){
         return effectif;
     }
+
     public List<StudentModel> getListStudent(){
         return studentList;
     }
 
-    //Definition des setteurs
+    //Definition des setters
+
 
     public void setIntitule(String inti){
         this.intitule = inti;
@@ -44,6 +49,7 @@ public class ClasseModel {
     public void setEffectif (int eff){
         this.effectif = eff;
     }
+
     public void setListStudent(List<StudentModel> listeEleve){
         this.studentList = listeEleve;
     }
