@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="716.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="-29.0" layoutY="16.0" prefHeight="559.999800000005" prefWidth="751.0">
+      <children>
+        <Button id="button" layoutX="594.0" layoutY="21.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="112.0" text="Déconnexion" />
+        <Label id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+        <Button layoutX="478.0" layoutY="21.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" text="Retour" />
+        <Text layoutX="232.0" layoutY="41.0" scaleX="20.81555342496685" scaleY="21.688247516962225" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur votre espace de gestion M. XY">
+          <font>
+            <Font size="1.0" />
+          </font>
+        </Text>
+        <Text fontSmoothingType="LCD" layoutX="202.0" layoutY="86.0" scaleX="31.900738506930733" scaleY="33.76527806639633" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY&gt;Les classes &gt;Ajouter une classe">
+          <font>
+            <Font name="Serif Regular" size="0.5" />
+          </font>
+        </Text>
+        <Button layoutX="515.0" layoutY="437.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="158.0" text="Supprimer cette classe" />
+        <Button layoutX="264.0" layoutY="437.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="192.0" text="Modifier les infos de cette classe" />
+        <Button layoutX="51.0" layoutY="437.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.67315673828125" text="Imprimer la liste des élèves" />
+        <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau :" />
+        <Text layoutX="37.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom classe :" />
+        <Text layoutX="37.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identif classe :" />
+        <Text layoutX="37.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enseignant Respo :" />
+        <Text layoutX="36.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaires :" />
+        <TextField layoutX="161.0" layoutY="170.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="192.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="214.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="235.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="366.0" prefHeight="57.0" prefWidth="234.0" />
+        <Text layoutX="365.0" layoutY="534.0" scaleX="1.8092966934988386" scaleY="1.3620786321660792" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Administrateur- Année 20XX-20YY" />
+        <Text layoutX="149.0" layoutY="127.0" scaleX="1.3163753388879944" scaleY="1.7961773289273026" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrer Id ou nom classe et appuyer sur entrée" />
+        <Text layoutX="36.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effectif :" />
+        <Text layoutX="36.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effectif Garçons :" />
+        <Text layoutX="36.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effectif filles :" />
+        <TextField layoutX="162.0" layoutY="266.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="297.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="330.0" prefWidth="234.0" />
+        <Button layoutX="478.0" layoutY="110.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="228.0" text="Caluler les moyennes des élèves" />
+        <Button layoutX="478.0" layoutY="179.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="228.0" text="Afficher appréciation conseil des classes" />
+        <Button layoutX="478.0" layoutY="338.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="234.0" text="Afficher la feuille de notes de la classe" />
+        <Button layoutX="478.0" layoutY="259.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="234.0" text="Faire le classement général" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

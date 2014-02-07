@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="731.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="-17.0" layoutY="-27.0" prefHeight="559.9999000000025" prefWidth="765.0">
+      <children>
+        <Button id="button" layoutX="631.0" layoutY="32.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="100.3125" text="Déconnexion" />
+        <Label id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+        <Button layoutX="503.0" layoutY="32.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" text="Retour" />
+        <Text layoutX="232.0" layoutY="41.0" scaleX="20.81555342496685" scaleY="21.688247516962225" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans votre espace de gestion M. XY">
+          <font>
+            <Font size="1.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text fontSmoothingType="LCD" layoutX="222.0" layoutY="86.0" scaleX="37.90550559259343" scaleY="33.76527806639633" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY&gt;Les élèves&gt;Ajouter un élève">
+          <font>
+            <Font name="Serif Regular" size="0.5" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutX="145.0" layoutY="120.0" scaleX="21.40231153124895" scaleY="29.41746761106187" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant : XXXXXXXXX" />
+        <Button layoutX="553.0" layoutY="423.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="147.0" text="Valider" />
+        <Button layoutX="583.0" layoutY="347.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" text="Effacer" />
+        <Button layoutX="583.0" layoutY="249.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="88.0" text="Afficher" />
+        <MenuButton layoutX="398.0" layoutY="423.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.654296875" text="Chercher">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <MenuButton layoutX="398.0" layoutY="468.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.654296875" text="Télécharger">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <MenuButton layoutX="398.0" layoutY="446.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.654296875" text="Chercher">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <Text layoutX="37.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Famille :" />
+        <Text layoutX="36.0" layoutY="433.0" scaleX="1.0" scaleY="0.9991128242780225" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe :" />
+        <Text layoutX="37.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel Port :" />
+        <Text layoutX="37.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel Fixe :" />
+        <Text layoutX="38.0" layoutY="476.0" scaleX="1.062699296690691" scaleY="0.9991146142700813" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo :" />
+        <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :" />
+        <Text layoutX="37.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date  de naissance :" />
+        <Text layoutX="37.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu de Naissance :" />
+        <Text layoutX="37.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe :" />
+        <Text layoutX="36.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Carte Id :" />
+        <Text layoutX="37.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro Assurance :" />
+        <Text layoutX="37.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :" />
+        <Text layoutX="37.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse Parent :" />
+        <Text layoutX="37.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+        <TextField layoutX="161.0" layoutY="170.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="192.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="214.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="236.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="258.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="281.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="303.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="327.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="351.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="375.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="398.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="420.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="445.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="467.0" prefWidth="234.0" />
+        <Text layoutX="142.0" layoutY="155.0" scaleX="1.3417249704831364" scaleY="1.3759177679882526" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche de l'élève XY par Id ou Nom ou Prénom" />
+        <Text layoutX="385.0" layoutY="526.0" scaleX="1.8045135324978057" scaleY="1.2343532804627082" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Administrateur- Année 20XX-20YY" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

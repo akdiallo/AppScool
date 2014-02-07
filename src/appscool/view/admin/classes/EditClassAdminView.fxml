@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="737.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="-7.0" layoutY="12.0" prefHeight="559.999800000005" prefWidth="751.0">
+      <children>
+        <Button id="button" layoutX="631.0" layoutY="21.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="105.0" text="Déconnexion" />
+        <Label id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+        <Button layoutX="510.0" layoutY="21.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" text="Retour" />
+        <Text layoutX="232.0" layoutY="41.0" scaleX="20.81555342496685" scaleY="21.688247516962225" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur votre espace de gestion M. XY">
+          <font>
+            <Font size="1.0" />
+          </font>
+        </Text>
+        <Text fontSmoothingType="LCD" layoutX="202.0" layoutY="86.0" scaleX="31.900738506930733" scaleY="33.76527806639633" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY&gt;Les classes &gt;Modifier une classe">
+          <font>
+            <Font name="Serif Regular" size="0.5" />
+          </font>
+        </Text>
+        <Button layoutX="539.0" layoutY="414.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" text="Valider" />
+        <Button layoutX="315.0" layoutY="413.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" text="Effacer" />
+        <Button layoutX="74.0" layoutY="413.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" text="Afficher" />
+        <MenuButton layoutX="396.0" layoutY="171.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.654296875" text="Chercher">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <MenuButton layoutX="394.0" layoutY="238.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="106.359375" text="Chercher">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <MenuButton layoutX="396.0" layoutY="215.0" minHeight="19.41339111328125" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.654296875" text="Chercher">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+          </items>
+        </MenuButton>
+        <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau :" />
+        <Text layoutX="37.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom classe :" />
+        <Text layoutX="37.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identif classe :" />
+        <Text layoutX="37.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enseignant Respo :" />
+        <Text layoutX="36.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaires :" />
+        <TextField layoutX="161.0" layoutY="170.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="192.0" prefWidth="234.0" />
+        <TextField layoutX="161.0" layoutY="214.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="236.0" prefWidth="234.0" />
+        <TextField layoutX="162.0" layoutY="258.0" prefHeight="85.0" prefWidth="234.0" />
+        <Text layoutX="365.0" layoutY="534.0" scaleX="1.8092966934988386" scaleY="1.3620786321660792" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Administrateur- Année 20XX-20YY" />
+        <Text layoutX="162.0" layoutY="125.0" scaleX="1.1817444219066937" scaleY="2.002447381302007" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche de la classe par Id ou nom classe" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
