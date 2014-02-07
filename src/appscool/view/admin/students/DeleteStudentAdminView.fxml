@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Text layoutX="221.0" layoutY="39.0" scaleX="20.81555342496685" scaleY="21.688247516962225" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur votre espace de gestion M. XY">
+      <font>
+        <Font size="1.0" />
+      </font>
+    </Text>
+    <Button id="button" layoutX="638.0" layoutY="23.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="100.3125" text="Déconnexion" />
+    <Text layoutX="50.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Année 20XX-20YY &gt; Les élèves &gt; Afficher un élève &gt; Supprimer cet élève" />
+    <Text layoutX="274.0" layoutY="553.0" scaleX="1.5876667247216953" scaleY="1.2343532804627082" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace -Administrateur- Année 20XX-20YY" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="242.0" layoutX="135.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" width="517.0" />
+    <Text layoutX="220.0" layoutY="224.0" scaleX="1.349321422679601" scaleY="2.4434655505502625" strokeType="OUTSIDE" strokeWidth="0.0" text="Etes vous sûre de vouloir supprimer définitivement cet élève?" />
+    <Text fill="RED" layoutX="225.0" layoutY="290.0" scaleX="1.0174701178610084" scaleY="1.9422418012726383" strokeType="OUTSIDE" strokeWidth="0.0" text="Attention cet élève ne figurera plus sur la base de données" />
+    <Button layoutX="447.0" layoutY="347.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" text="ANNULER" />
+    <Button layoutX="258.0" layoutY="347.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" text="CONFIRMER" />
+  </children>
+</AnchorPane>

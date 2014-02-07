@@ -7,6 +7,7 @@ package appscool;
 
 
 
+import appscool.model.database.SQLRequestHandler;
 import appscool.presenter.admin.employees.AddEmployeeController;
 import java.io.File;
 import java.nio.file.FileSystems;
@@ -31,7 +32,7 @@ public class AppScool extends Application{
     public void start(Stage primaryStage){
         try {
 
-
+            SQLRequestHandler sql_rqh = new SQLRequestHandler();
             //File file = new File("");
             //File file_to_read = new File(file.getAbsolutePath() +"\\appscool\\view\\admin\\employees" +"AddEmployeeView.fxml");
             //String folderPath = "/appscool/view/admin/employees/";
