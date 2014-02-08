@@ -12,8 +12,11 @@
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <jar href="AppScool.jar" size="66627" download="eager" />
 =======
+=======
+>>>>>>> 0b21001edbc6c7198f75fd56ad372c15cf410e74
     <jar href="AppScool.jar" size="103749" download="eager" />
     <jar href="lib/deploy.jar" size="4064329" download="eager" />
     <jar href="lib/javaws.jar" size="897652" download="eager" />

@@ -12,9 +12,12 @@
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/adminaddayearview.css</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsModifyAStudent.fxml</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsDisplayAStudentController.java</file>
+            <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsDisplayAStudentEraseAStudentView.fxml</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/presenter/AuthentificationAdminPresenter.java</file>
+            <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsDisplayAStudentEraseAStudentViewController.java</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/adminayearstudentsview.css</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsAddAStudentController.java</file>
+            <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/adminayearstudentsdisplayastudenteraseastudentview.css</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/presenter/YearXYStudentsAdminPresenter.java</file>
             <file>file:/C:/Users/amma/Documents/NetBeansProjects/AppScool/src/appscool/view/admin/AdminAYearStudentsModifyAStudentController.java</file>
         </group>
